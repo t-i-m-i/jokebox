@@ -12,7 +12,7 @@ interface PropsReveal {
 
 function Reveal({ isOpen }: PropsReveal) {
 
-  const [joke, setJoke] = useState('');
+  const [joke, setJoke] = useState<string>('');
 
   useEffect(() => {
     fetch('https://icanhazdadjoke.com/', {
@@ -26,7 +26,7 @@ function Reveal({ isOpen }: PropsReveal) {
 
   return (
     <div>
-      { isOpen && <p className="joke">{joke}</p> }
+      {isOpen && <p className="joke">{joke}</p>}
     </div>
   )
 }
