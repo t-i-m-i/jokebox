@@ -1,0 +1,9 @@
+.doorlock {
+  display: flex;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 48px;
+}
