@@ -1,9 +1,14 @@
 .doorlock {
   display: flex;
+  margin-bottom: 10px;
 }
 .control {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 48px;
+}
+.joke {
+  color: tomato;
+  font-size: 24px;
 }
