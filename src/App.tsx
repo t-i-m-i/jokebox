@@ -56,6 +56,11 @@ function App() {
       digit,
       ...currentDigits.slice(idx + 1)
     ])
+
+    // a cleaner equivalent that keeps the "just change one index" intent explicit:
+    // setDigits((currentDigits) =>
+    //   currentDigits.map((d, i) => (i === idx ? digit : d))
+    // );
   }
 
   const checkPassword = () => {
